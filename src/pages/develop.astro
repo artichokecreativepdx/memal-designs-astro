@@ -1,0 +1,66 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import Planit from '../components/images/develop/planit_home.png';
+import Grendels from '../components/images/develop/grendels_screen.jpg';
+import CPR from '../components/images/develop/cpr.jpg';
+---
+<Layout title="Developer Portfolio">
+    <main transition:animate="slide">
+       
+            <div class="row">
+              <h2>current &amp; past projects</h2>
+            </div>
+          
+            <div class="row">
+              <div class="four columns">
+                <div class="card">
+                  <!-- <div class="planitCarosel">
+                    <Carosel client:load />
+                  </div> -->
+                  <div class="card-image">
+                    <Image src={Planit} alt="planuit" height="300" />
+                  </div>
+          
+                  <div class="planitProject">
+                    <p>
+                      Group project with the direction of Propel Projects creating MVP App
+                      to be showcased at the end of 8 weeks. Worked with Project manager,
+                      UX/UI, and Back-end persons to create fictional travel App using
+                      Ionic framework and React/ Typescript. The project concept was to
+                      create an app that suggests various travel destination based on a
+                      series of questions presented to the user.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="four columns">
+                <div class="card">
+                  <div class="card-image">
+                    <Image src={CPR} alt="CPR website" height="300" />
+                  </div>
+          
+                  <div class="cprProjects">
+                    Worked with 501(c)(3), that provides shelter pets with homes,
+                    establishing, designing, and maintaining the website, and
+                    communicating with leadership regarding content and design of website.
+                  </div>
+                </div>
+              </div>
+              <div class="four columns">
+                <div class="card">
+                  <div class="card-image">
+                    <Image src={Grendels} alt="Grendel's website" height="300" />
+                  </div>
+          
+                  <div class="grendelsProject">
+                    Working with client to capture look and feel of cafe within the site,
+                    update cafe menu, add images, write product description, and create
+                    working contact page, ensuring that the site was mobile first design.
+                  </div>
+                </div>
+              </div>
+            </div>
+        
+    </main>
+</Layout>

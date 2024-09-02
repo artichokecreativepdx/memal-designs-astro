@@ -1,0 +1,33 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { Image } from 'astro:assets';
+import  SxtnLogoR from '../components/images/design/16logoR.png'
+import  Cinder from '../components/images/design/cinderLogo.png'
+import  Larken from '../components/images/design/Larken_camp.png'
+
+
+---
+<Layout title="Design Portfolio">
+    <main transition:animate="slide">
+<div class="row">
+    <div class="card">
+        <div class="imgCont three columns">
+            <Image src={SxtnLogoR} class="dis" alt="16 logo"/>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="imgCont three columns">
+            <Image src={Cinder} class="dis" alt="Cinder Logo"/>
+        </div>
+    </div>
+    
+    <div class="card">
+        <div class="imgCont three columns">
+            <Image src={Larken} class="dis" alt="Larken camp logo"/>
+        </div> 
+    </div>
+       
+</div>
+    </main>
+</Layout>

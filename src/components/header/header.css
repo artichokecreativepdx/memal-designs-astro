@@ -1,0 +1,10 @@
+header {
+  width: 100dvi;
+  position: relative;
+}
+.logoNav {
+  padding-top: 20px;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+}

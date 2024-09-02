@@ -1,0 +1,69 @@
+:root {
+  --white: #fffdf4;
+  --primary: #e16606;
+  --secondary: #35b4c0;
+  --tertiary: #b02b10;
+  --brown: #46260f;
+  --black: #313435;
+}
+/* * {
+  outline: 1px solid red;
+} */
+section {
+  display: flex;
+  flex-direction: column;
+}
+body {
+  background: var(--black);
+}
+.intro {
+  color: var(--primary);
+}
+main {
+  background-color: var(--white);
+  width: 100%;
+}
+a {
+  cursor: pointer;
+  color: var(--tertiary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--secondary);
+}
+.dis {
+  max-width: 100%;
+  height: auto;
+}
+
+h2 {
+  font-family: 'Literata', serif;
+}
+h1,
+h3,
+h4,
+h5,
+p,
+a {
+  font-family: 'Figtree', sans-serif;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+}

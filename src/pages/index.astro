@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets';
+import Card from '../components/card/card.astro'
+import DevImg from '../components/images/devImg.webp';
+import DesignImg from '../components/images/designImg.webp';
+import IllusImg from '../components/images/illusImg.webp';
+import Layout from '../layouts/Layout.astro';
+
+
+
+---
+
+<Layout title="memal designs">
+	<main transition:animate="slide">
+
+			<section class="intro">
+			  <h1>Hello, I am Megan Maldonado, Creative developer out of the Mid-Atlantic</h1>
+			</section>
+			<section class="portfolio">
+			 <Card>
+				<div class="cardLayout1">
+					<h3>Development</h3>
+					<Image src={DevImg} alt="link for development page" height={200} />
+				  </div>
+			 </Card>
+				
+			 
+			 <Card>
+<div class="cardLayout1">
+				  <h3>Illustration</h3>
+				  <Image src={IllusImg} alt="link for illustration page" height={200} />
+				</div>
+			 </Card>
+				
+			 
+			 <Card>
+				<div class="cardLayout1">
+					<h3>Design</h3>
+					<Image src={DesignImg} alt="link for design page" height={200} />
+				  </div>
+			 </Card>
+				
+			 
+			</section>
+		  </main>
+		
+</Layout>
+
+

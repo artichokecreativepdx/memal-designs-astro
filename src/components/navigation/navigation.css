@@ -1,0 +1,47 @@
+nav {
+  width: 100%;
+  display: flex;
+}
+
+.mobile {
+  justify-content: space-around;
+  position: fixed;
+  z-index: 500;
+  display: flex;
+  padding-top: 10px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--brown);
+  width: 100dvw;
+
+  border-radius: 15px 15px 0 0;
+}
+.mobile a {
+  color: var(--white);
+}
+mobile a:hover {
+  color: var(--secondary);
+}
+.desktop {
+  display: none;
+}
+@media only screen and (min-width: 750px) {
+  .mobile {
+    display: none;
+  }
+
+  .desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100dvw;
+  }
+
+  .desktop a {
+    color: var(--secondary);
+    padding-bottom: 10px;
+  }
+  .desktop a:hover {
+    color: var(--tertiary);
+  }
+}

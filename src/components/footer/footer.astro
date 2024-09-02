@@ -1,0 +1,42 @@
+---
+import { Image } from 'astro:assets';
+import './footer.css';
+import Moth1 from './imgs/moth1_small.png';
+import Moth2 from './imgs/moth2_small.png';
+import Moth3 from './imgs/moth3_small.png';
+import {GithubIcon, InstagramIcon, LinkedinIcon, SendIcon} from 'astro-feather'
+
+---
+
+  <footer class="footer">
+    <div class="socials">
+      <h2>Contact &amp; Socials</h2>
+      
+      <a href="https://github.com/artichokecreativepdx" target="blank">
+       <GithubIcon>
+      </a>
+
+      <a href="https://www.instagram.com/dcartichoke/" target="blank">
+        <InstagramIcon>
+      </a>
+
+      <a href="https://www.linkedin.com/in/meganmaldonado/" target="blank">
+        <LinkedinIcon>
+      </a>
+    
+        <a
+          href="mailto:&#109;&#101;&#103;&#97;&#110;&#64;&#109;&#101;&#109;&#97;&#108;&#99;&#114;&#101;&#97;&#116;&#105;&#118;&#101;&#46;&#99;&#111;&#109;"
+          rel="nofollow noopener noreferrer"
+        >
+          <SendIcon>
+        </a>
+       
+    </div>
+    <div class="moths">
+      <Image src={Moth1} alt="moth1" class="mothImg" />
+      <Image src={Moth2} alt="moth2" class="mothImg" />
+      <Image src={Moth3} alt="moth3" class="mothImg" />
+    </div>
+  </footer>
+
+

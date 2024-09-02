@@ -1,0 +1,17 @@
+.socials {
+  display: flex;
+  flex-direction: column;
+  background: var(--black);
+}
+
+.socials {
+  border-radius: 10px;
+  padding: 20px;
+  background: var(--white);
+  margin: 20px;
+}
+
+.mothImg {
+  height: 100px;
+  width: auto;
+}

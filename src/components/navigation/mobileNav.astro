@@ -1,0 +1,21 @@
+---
+import { Image } from 'astro:assets';
+import LogoSmall from './images/my_logo.webp';
+---
+
+
+<div class="mobile u-max-full-width">
+    <a href="/">
+        <Image 
+        src={LogoSmall} 
+        aria-label="memal home" 
+        alt="logo small" 
+        width={25} 
+       
+        />
+  </a>
+    <a href="/about">About</a>
+    <a href="/design">Design</a>
+    <a href="/develop">Develop</a>
+    <a href="/illustrate">Illustrate</a>
+</div>
